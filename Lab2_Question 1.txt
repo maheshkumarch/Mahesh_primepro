@@ -1,0 +1,51 @@
+Question 1:
+
+In "xyz" super market the given products and discounts 
+   pname           dis
+   nuts            10%
+   oils            5%
+   soaps           12%
+   otherprodcuts   2%
+
+if the customer chosen all products the amount is 20000 display all discount values
+note: pls prepare using  switch...case
+
+Code:
+
+package xyz;
+
+public class Lab2q1 {
+
+	public static void main(String[] args) {
+		 String[] products = {"nuts", "oils", "soaps", "otherproducts"};
+	        double totalAmount = 20000;
+
+	        for (String product : products) {
+	            double discount = 0;
+	            
+	            switch (product) {
+	                case "nuts":
+	                    discount = totalAmount * 0.10;
+	                    break;
+	                case "oils":
+	                    discount = totalAmount * 0.05;
+	                    break;
+	                case "soaps":
+	                    discount = totalAmount * 0.12;
+	                    break;
+	                case "otherproducts":
+	                    discount = totalAmount * 0.02;
+	                    break;
+	            }
+
+	            System.out.println(product + ": " + discount);
+	        }
+	    }
+	}
+
+Output:
+
+nuts: 2000.0
+oils: 1000.0
+soaps: 2400.0
+otherproducts: 400.0
