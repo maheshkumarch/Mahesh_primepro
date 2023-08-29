@@ -1,0 +1,67 @@
+Hirerchial Example:-
+
+Code:-
+
+package xyz;
+class Mobile1{
+	String m1name;
+	String m1model;
+	String m1storage;
+	Mobile1(){
+		m1name="Name";
+		m1model="Model";
+		m1storage="Storage";
+	}
+}
+class Mobile2 extends Mobile1{
+	String m2name;
+	int m2model;
+	int m2storage;
+	Mobile2(){
+		m2name="Oneplus";
+		m2model=11;
+		m2storage=256;
+	}
+	void show() {
+		System.out.println(m1name+"     "+m1model+"  "+m1storage);
+		System.out.println(m2name+"   "+m2model+"    "+m2storage);
+		System.out.println();
+
+	}
+
+}
+class Mobile3 extends Mobile1{
+	String m3name;
+	int m3model;
+	int m3storage; 
+	Mobile3(){
+		m3name="Sony";
+		m3model=13;
+		m3storage=512;
+		
+	}
+	void show() {
+		System.out.println(m1name+"     "+m1model+"  "+m1storage);
+		System.out.println(m3name+"     "+m3model+"      "+m3storage);
+
+	}
+}
+
+public class Hirerchial {
+
+	public static void main(String[] args) {
+		Mobile2 m2 = new Mobile2();
+		Mobile3 m3 = new Mobile3();
+		m2.show();
+		m3.show();
+	}
+
+}
+
+Output:-
+
+Name     Model  Storage
+Oneplus   11    256
+
+Name     Model  Storage
+Sony     13      512
