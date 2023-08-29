@@ -1,0 +1,45 @@
+Multi level inheritance
+
+Code:-
+ 
+package xyz;
+class Students{
+	int sid;
+	String sname;
+	Students(){
+		sid=1;
+		sname="Mahesh";
+	}
+}
+class Marks extends Students{
+	int m1,m2,m3;
+	Marks(){
+		m1=45;
+		m2=65;
+		m3=78;
+	}
+}
+class Results extends Marks{
+	String Res;
+	Results(){
+		if(m1>=40 && m2>=40 && m3>=40) {
+			System.out.println("You have Passed in all subjects");
+		}
+		else {
+			System.out.println("You have Failed");
+		}
+		
+	}
+}
+public class Multilevel {
+
+	public static void main(String[] args) {
+		Results Res = new Results();
+
+	}
+
+}
+
+Output:-
+
+You have Passed in all subjects
