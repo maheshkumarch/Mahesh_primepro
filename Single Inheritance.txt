@@ -1,0 +1,40 @@
+Single Inheritance
+ 
+Code:-
+package xyz;
+class Bank{
+	int bcode;
+	String bname;
+	Bank(){
+		bcode=101;
+		bname="Kphb";
+	}
+
+	}
+class Hdfc extends Bank{
+	int cid;
+	String cname,actype;
+	Hdfc(){
+		cid=100;
+		cname="Mahesh";
+		actype="Saving";
+	}
+	void show() {
+		System.out.println(bcode+" "+bname+" "+cid+" "+cname+" "+actype);
+	}
+}
+
+
+public class SingleIn {
+
+	public static void main(String[] args) {
+		Hdfc h=new Hdfc();
+		h.show();
+
+	}
+
+}
+
+Output:-
+
+101 Kphb 100 Mahesh Saving
