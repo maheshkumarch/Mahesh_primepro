@@ -1,0 +1,38 @@
+1)create Student class with sid,sname,marks datamembers and input() method for input details and output() method to print details?
+
+Code:-
+
+package xyz;
+import java.util.Scanner;
+class Mahesh{
+	int sid;
+	String sname;
+	int marks;
+	void input() {
+		Scanner sc= new Scanner(System.in);
+		sid=sc.nextInt();
+		sname=sc.next();
+		marks=sc.nextInt();
+	}void output(){
+		System.out.println(sid+" "+sname+" "+marks);
+
+	}
+}
+public class Lab3q1 {
+
+	public static void main(String[] args) {
+		Mahesh m = new Mahesh();
+		m.input();
+		m.output();
+
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+Output:-
+
+1 mahesh 100 // user input
+1 mahesh 100
+

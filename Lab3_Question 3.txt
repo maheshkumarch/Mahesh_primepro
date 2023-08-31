@@ -1,0 +1,51 @@
+3)To make inheritance for given below classes
+      Person [pid,pname]
+        |                        |
+   Student[marks]  Emp[salary]
+
+Code:-
+
+package xyz;
+class Person{
+	int pid;
+	String pname;
+	Person(){
+		pid=1;
+		pname="Mahesh";
+	}}
+	class Student extends Person{
+		int marks;
+		Student(){
+			marks=100;
+		}void show1(){
+			System.out.println(pid+" "+pname+" "+marks);
+		}}
+		class Emp extends Person{
+			int salary;
+			Emp(){
+				salary=1000;
+				
+			}void show2(){
+				System.out.println(pid+" "+pname+" "+salary );
+			}
+		}
+	
+
+public class Lab3q3 {
+
+	public static void main(String[] args) {
+		Student s =new Student();
+		s.show1();
+		Emp e = new Emp();
+		e.show2();
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+Output:-
+
+1 Mahesh 100
+1 Mahesh 1000

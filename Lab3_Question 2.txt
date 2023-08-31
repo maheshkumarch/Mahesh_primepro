@@ -1,0 +1,48 @@
+2)Bankcustomer class with acno,atype,amt fields using constructor overloading?
+
+Code:-
+ 
+package xyz;
+class Bankcustomer{
+	int acno;
+	String actype;
+	int amt;
+	Bankcustomer(){
+		acno=1;
+		actype="saving";
+		amt=1000;
+	}
+	
+	Bankcustomer(int x,String y,int z){
+		acno=x;
+		actype=y;
+		amt=z;
+	}
+	void show2() {
+		System.out.println(acno+" "+actype+" "+amt);
+
+	}
+}
+
+public class Lab3q2 {
+
+	public static void main(String[] args) {
+		Bankcustomer b1 =new Bankcustomer();
+		b1.show2();
+		Bankcustomer b2 =new Bankcustomer(2,"Saving",100);
+		b2.show2();
+
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+Output:-
+
+1 saving 1000
+2 Saving 100
+ 
