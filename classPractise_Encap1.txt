@@ -1,0 +1,61 @@
+Q) Create a class "Bookflight" , datatype are bookid,flightid,classtype,date of birth, date of journey . Using input,setter and getter.
+
+Code:-
+package xyz;
+class Bookflight{
+	private int bookid;
+	private int flightid;
+	private String classtype;
+	private String dob;
+	private String doj;
+	public int getBookid() {
+		return bookid;
+	}
+	public void setBookid(int bookid) {
+		this.bookid = bookid;
+	}
+	public int getFlightid() {
+		return flightid;
+	}
+	public void setFlightid(int flightid) {
+		this.flightid = flightid;
+	}
+	public String getClasstype() {
+		return classtype;
+	}
+	public void setClasstype(String classtype) {
+		this.classtype = classtype;
+	}
+	public String getDob() {
+		return dob;
+	}
+	public void setDob(String dob) {
+		this.dob = dob;
+	}
+	public String getDoj() {
+		return doj;
+	}
+	public void setDoj(String doj) {
+		this.doj = doj;
+	}
+	
+}
+
+public class Encap1 {
+
+	public static void main(String[] args) {
+		Bookflight b = new Bookflight();
+		b.setBookid(1);
+		b.setFlightid(10);
+		b.setClasstype("Business");
+		b.setDob("22-12-2000");
+		b.setDoj("06-09-2023");
+		System.out.println(b.getBookid()+" "+b.getFlightid()+" "+b.getClasstype()+" "+b.getDob()+" "+b.getDoj());
+
+	}
+
+}
+
+Output:-
+
+1 10 Business 22-12-2000 06-09-2023
