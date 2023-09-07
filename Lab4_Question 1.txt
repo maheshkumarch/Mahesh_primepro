@@ -1,0 +1,43 @@
+1)Create a java program to explain about "String" class using given below methods
+
+ 1)concat()
+ 2)charAt()
+ 3)subString()
+ 4)replace()
+ 5)indexAt()
+ 6)startsWith()
+ 7)endsWith()
+ 8)equals()
+
+Code:-
+
+package xyz;
+
+public class Lab4q1 {
+
+	public static void main(String[] args) {
+		String s1 = "Mahesh";
+		String s2 = "kumar";
+		System.out.println(s1.concat(s2));
+		System.out.println(s1.charAt(0));
+		System.out.println(s1.substring(0,3));
+		System.out.println(s1.replace("Mah","Gan"));
+		System.out.println(s1.indexOf("h"));
+		System.out.println(s1.startsWith("M"));
+		System.out.println(s1.endsWith("h"));
+		System.out.println(s1.equals(s2));
+	}
+
+}
+
+Output:-
+
+Maheshkumar
+M
+Mah
+Ganesh
+2
+true
+true
+false
+

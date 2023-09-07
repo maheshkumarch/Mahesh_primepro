@@ -1,0 +1,37 @@
+2)Create java program to explain about "StringBuilder" and "StringBuffer" classes using given below methods
+  1)reverse()
+  2)delete()
+  3)append()
+  4)insert()
+  5)length()
+
+Code:-
+
+package xyz;
+
+public class Lab4q2 {
+
+	public static void main(String[] args) {
+		StringBuilder s1 = new StringBuilder("Mahesh");
+		StringBuffer s2=new StringBuffer("kumar");
+		System.out.println(s1.reverse());//hsehaM
+		System.out.println(s1.delete(0,3));//haM
+		System.out.println(s1.append("ch."));//haMch.
+		System.out.println(s1.insert(0,"Mahesh"));//MaheshhaMch.
+		System.out.println(s2.length());//5
+
+
+
+		
+
+	}
+
+}
+
+Output:-
+
+hsehaM
+haM
+haMch.
+MaheshhaMch.
+5

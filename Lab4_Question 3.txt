@@ -1,0 +1,51 @@
+3)Create java Program to explain about "Object" class using given below methods?
+  1)equals()
+  2) ==
+  3)hashCode()
+  4)toString()
+  5)getclass()
+
+Code:-
+
+package xyz;
+class Emmp1{
+	int eid1,eid2;
+	Emmp1(int x)
+	{
+		eid1=x;
+	}
+	public String toString()
+	{
+		return eid1+" ";
+	}
+
+}
+public class Lab4q3 {
+
+	public static void main(String[] args) {
+		
+		Emmp1 o1 = new Emmp1(10);
+	 Emmp1 o2=new Emmp1(11);
+	 System.out.println(o1.equals(o2));
+	 System.out.println(o1==o2);
+	 System.out.println(o1.hashCode());
+	 System.out.println(o1.toString());
+	 System.out.println(o1.equals(o2));
+	 System.out.println(o1.getClass());
+
+
+
+	}
+
+}
+
+Output:-
+
+false
+false
+20132171
+10 
+false
+class xyz.Emmp1
+
+
