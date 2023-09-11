@@ -1,0 +1,41 @@
+Example Treeset
+
+Code:-
+
+import java.util.*;
+
+class Emps1 {
+    int eid;
+    String ename;
+
+    Emps1(int eid, String ename) {
+        this.eid = eid;
+        this.ename = ename;
+    }
+}
+
+public class Extreeset {
+
+    public static void main(String[] args) {
+        Emps1 e1 = new Emps1(1, "Mahesh");
+        Emps1 e2 = new Emps1(2, "Ganesh");
+        Emps1 e3 = new Emps1(3, "Rajesh");
+        
+        // Create a TreeSet with a custom comparator using Java streams
+        TreeSet<Emps1> ts = new TreeSet<>(Comparator.comparingInt(emp -> emp.eid));
+        
+        ts.add(e1);
+        ts.add(e2);
+        ts.add(e3);
+        
+        for (Emps1 e : ts) {
+            System.out.println(e.eid + " " + e.ename);
+        }
+    }
+}
+
+Output:-
+
+1 Mahesh
+2 Ganesh
+3 Rajesh

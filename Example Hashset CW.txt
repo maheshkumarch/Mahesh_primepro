@@ -1,0 +1,37 @@
+Example Hashset
+
+Code:-
+package xyz;
+
+import java.util.HashSet;
+
+class Emps{
+	int eid;
+	String ename;
+	Emps(int eid,String ename){
+		this.eid=eid;
+		this.ename=ename;
+	}
+}
+public class Exhashset {
+
+	public static void main(String[] args) {
+		Emps e1 = new Emps(1,"Mahesh");
+		Emps e2 = new Emps(2,"Ganesh");
+		Emps e3 = new Emps(3,"Rajesh");
+		HashSet<Emps> hs = new HashSet<Emps>();
+		hs.add(e1);
+		hs.add(e2);
+		hs.add(e3);
+		for(Emps e:hs) {
+			System.out.println(e.eid+" "+e.ename);
+		}
+		
+	}
+
+}
+
+Output:-
+2 Ganesh
+1 Mahesh
+3 Rajesh
