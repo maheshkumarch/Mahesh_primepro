@@ -1,0 +1,40 @@
+3)"HashMap" and "LinkedHashMap" collections with put(),get methods?
+
+Code:-
+package xyz;
+
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
+public class Lab5q3 {
+	public static void main(String[] args) {
+		HashMap<Integer,String> map=new HashMap<Integer,String>();
+		map.put(1,"Mahesh");   
+		map.put(2,"Kumar");
+	    System.out.println("Iterating Hashmap...");
+	    for(Map.Entry m : map.entrySet())
+	    	{    
+	    	System.out.println(m.getKey()+" "+m.getValue());  
+	    	LinkedHashMap<Integer, String> map1 = new LinkedHashMap<Integer, String>();     
+	    	map1.put(1,"Two");    
+			map1.put(2,"Two");    
+			map1.put(3,"Two"); 
+		    System.out.println("Keys: "+map1.keySet());    
+			System.out.println("Values: "+map1.values());  
+			System.out.println("Key-Value pairs: "+map1.entrySet());
+		 }
+	}
+
+}
+
+Output:-
+
+Iterating Hashmap...
+1 Mahesh
+Keys: [1, 2, 3]
+Values: [Two, Two, Two]
+Key-Value pairs: [1=Two, 2=Two, 3=Two]
+2 Kumar
+Keys: [1, 2, 3]
+Values: [Two, Two, Two]
+Key-Value pairs: [1=Two, 2=Two, 3=Two]

@@ -1,0 +1,47 @@
+1)Create emp details eid,ename,sal and add details using "ArrayList" class.
+
+Code:
+package xyz;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+class Employee22{
+	int eid;
+	String ename;
+	int sal;
+	Employee22(int eid,String ename,int sal){
+		this.eid=eid;
+		this.ename=ename;
+		this.sal=sal;
+	}
+}
+public class Lab5q1 {
+
+	public static void main(String[] args) {
+		 //Creating user-defined class objects  
+		Employee22 e1=new Employee22(101,"Mahesh",25000);  
+		Employee22 e2=new Employee22(102,"Ravi",20000);  
+		Employee22 e3=new Employee22(103,"Karthik",22000);  
+		  ArrayList<Employee22> al=new ArrayList<Employee22>();//creating arraylist  
+		  al.add(e1);//adding Student class object  
+		  al.add(e2);  
+		  al.add(e3);  
+		    
+		  Iterator<Employee22> itr=al.iterator();  
+		  //traversing elements of ArrayList object  
+		  while(itr.hasNext()){  
+			  Employee22 e=(Employee22)itr.next();  
+		    System.out.println(e.eid+" "+e.ename+" "+e.sal); 
+		// TODO Auto-generated method stub
+
+	}
+
+	}
+	}
+Output:-
+
+         101 Mahesh 25000
+         102 Ravi 20000
+         103 Karthik 22000
+
