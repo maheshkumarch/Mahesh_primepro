@@ -1,0 +1,35 @@
+2)wrp to demo user defined exception?
+
+Code:-
+package xyz;
+
+
+class InvalidAgeException extends Exception {
+	public InvalidAgeException(String s)
+	{
+		super(s);
+	}
+}
+
+public class Lab5q2 {
+	static void validate(int age) throws InvalidAgeException
+	{
+		if(age<18)
+			throw new InvalidAgeException("You are a Minor");
+		else
+			System.out.println("You are a Major");
+	}
+	public static void main(String []args) {
+		try {
+			validate(23);
+		}catch(Exception m)
+		{
+			System.out.println("Excaption occured : "+m);
+		}
+		System.out.println("Rest of the code..");
+	}
+}
+
+Output:-
+You are a Major
+Rest of the code..
