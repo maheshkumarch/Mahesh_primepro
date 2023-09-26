@@ -1,0 +1,76 @@
+1)Write A Queries For Given Below ‘String’
+‘Hyderabad’
+
+A)To Convert Upper Case
+
+select upper('hyderabad')
+# upper('hyderabad')
+'HYDERABAD'
+
+B)To Display Only First 3 Letters
+  
+select substr('hyderabad',1,3)
+# substr('hyderabad',1,3)
+'hyd'
+
+C)To Replace ‘Hyd’ With ‘Secun’
+
+select replace('hyderabad','hyd','secun')
+# replace('hyderabad','hyd','secun')
+'secunerabad'
+
+D)To Find Position Of First ‘e’ Letter
+
+select instr('hyderabad','e')
+# instr('hyderabad','e')
+'4'
+
+
+2)Write A Queries For Given Below ‘Date’
+’15-Sep-20’
+
+A)To Display Day For Above Date
+
+select day('2023-09-15')
+# day('2023-09-15')
+'15'
+
+B)To Display Only Year In 4 Digits
+
+select year(sysdate())
+# year(sysdate())
+'2023'
+
+C)To Find Days Difference The Given Above Date To Today Date
+
+select  datediff(sysdate(),'2023-09-15')
+# datediff(sysdate(),'2023-09-15')
+'11'
+
+3)Write A Queries For Given Below ‘Number’
+27.456
+
+A)To Display Only Integer Part.
+
+select floor(27.456)
+# floor(27.456)
+'27'
+
+B)To Get Sign Of That Number.
+
+select sign(27.456)
+# sign(27.456)
+'1'
+
+C)To Roundup Number With First Precision.
+
+select round(27.456,1)
+# round(27.456,1)
+'27.5'
+
+D)To Display Ceiled Number.
+
+select ceil(27.456)
+# ceil(27.456)
+'28'
+
