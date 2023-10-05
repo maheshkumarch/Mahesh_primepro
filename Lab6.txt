@@ -1,0 +1,45 @@
+---Lab 28-9- 2023
+
+create table groups_table(gid int primary key,gname varchar(20));
+insert into groups_table values(1,"ECE"),(2,"CSE"),(3,"IT");
+desc groups_table ;
+select * from groups_table ;
+CREATE TABLE studentse (
+    rollno INT PRIMARY KEY,
+    sname VARCHAR(50) NOT NULL,
+    marks INT NOT NULL CHECK (marks >= 0 AND marks <= 100),
+    gid INT,
+    FOREIGN KEY (gid) REFERENCES groups_table(gid) ON UPDATE CASCADE
+);
+desc studentse ;
+INSERT INTO studentse (rollno, sname, marks, gid)
+VALUES
+    (100, 'SURYA', 75, 1),
+    (101, 'RAVI', 67, 1),
+    (102, 'SITA', 97, 2);
+
+/* To get which course has students with their details from both tables: */
+
+select * from studentse ;
+SELECT G.gname AS Course, S.rollno, S.sname, S.marks
+FROM groups_table G
+JOIN studentse S ON G.gid = S.gid;
+
+/* To get students' total marks based on group ids: */
+
+SELECT G.gname AS Course, SUM(S.marks) AS TotalMarks
+FROM groups_table G
+JOIN studentse S ON G.gid = S.gid
+GROUP BY G.gname;
+
+/* To get which group has not taken any student: */
+
+SELECT G.gname AS Course
+FROM groups_table G
+LEFT JOIN studentse S ON G.gid = S.gid
+WHERE S.gid IS NULL;
+
+/* To display which student's marks are equal to 'SITA' marks */
+
+SELECT * FROM studentse
+WHERE marks = (SELECT marks FROM students WHERE sname = 'SITA');
