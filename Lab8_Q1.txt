@@ -1,0 +1,69 @@
+<html>
+<head>
+    <style>
+        table {
+            width: 30%;
+            height: 70%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 4px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        th.colspan {
+            background-color: #c2c2c2;
+        }
+    </style>
+</head>
+<body>
+    <table>
+      
+            <tr>
+                <th colspan="4" class="colspan">Full Stack java development</th>
+            </tr>
+    
+        <tbody>
+            <tr>
+                <td>weeks</td>
+                <td>module</td>
+                <td>hours</td>
+                <td rowspan="7">Each module case studies,assignments.</td>
+            </tr>
+            <tr>
+                <td>2 weeks</td>
+                <td>Orcale sql</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>1 weeks</td>
+                <td>JDBC</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>2 weeks</td>
+                <td>Web Ui</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>2 weeks</td>
+                <td>Servlets</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>2 weeks</td>
+                <td>JSP</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>2 weeks</td>
+                <td>Core java</td>
+                <td>25</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
